@@ -3,9 +3,9 @@
  * Plugin Name:	Table Addons for Elementor
  * Description: Table Widget for elementor page builder. Effortlessly create stunning and functional tables on Elementor.
  * Plugin URI:  https://fusionplugin.com/plugins/table-addons-for-elementor/
- * Version:     2.1.3
- * Elementor tested up to: 3.22.1
- * Elementor Pro tested up to: 3.22.1
+ * Version:     2.1.4
+ * Elementor tested up to: 3.25.6
+ * Elementor Pro tested up to: 3.25.6
  * Author:      FusionPlugin
  * Author URI:  https://fusionplugin.com/
  * License:		GPL-2.0+
@@ -23,7 +23,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Currently plugin version.
  */
-define( 'TABLE_ADDONS_FOR_ELEMENTOR_VERSION', '2.1.3' );
+define( 'TABLE_ADDONS_FOR_ELEMENTOR_VERSION', '2.1.4' );
 define( 'TABLE_ADDONS_FOR_ELEMENTOR__BASE', plugin_basename( __FILE__ ) );
 
 /**

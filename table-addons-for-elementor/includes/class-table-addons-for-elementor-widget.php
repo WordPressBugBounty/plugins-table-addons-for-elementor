@@ -873,6 +873,23 @@ class Table_Addons_For_Elementor_Widget extends \Elementor\Widget_Base {
 			]
 		);
 
+		$this->add_control(
+			'header_word_break',
+			[
+				'label' => __( 'Word Break', 'table-addons-for-elementor' ),
+				'type' => Controls_Manager::SELECT,
+				'options' => [
+					'break-all' => __( 'Break All', 'table-addons-for-elementor' ),
+					'normal' => __( 'Normal', 'table-addons-for-elementor' ),
+					'break-word' => __( 'Break Word', 'table-addons-for-elementor' ),
+					'keep-all' => __( 'Keep All', 'table-addons-for-elementor' ),
+				],
+				'selectors' => [
+					'{{WRAPPER}} table.tafe-table th' => 'word-break: {{VALUE}};',
+				],
+			]
+		);
+
 		$this->end_controls_section();
 
 		$this->start_controls_section(
@@ -1025,6 +1042,23 @@ class Table_Addons_For_Elementor_Widget extends \Elementor\Widget_Base {
 				'selectors' => [
 					'{{WRAPPER}} table.tafe-table .tafe-table-body tr:nth-of-type(2n) td' => 'color: {{VALUE}};',
 				]
+			]
+		);
+
+		$this->add_control(
+			'body_word_break',
+			[
+				'label' => __( 'Word Break', 'table-addons-for-elementor' ),
+				'type' => Controls_Manager::SELECT,
+				'options' => [
+					'break-all' => __( 'Break All', 'table-addons-for-elementor' ),
+					'normal' => __( 'Normal', 'table-addons-for-elementor' ),
+					'break-word' => __( 'Break Word', 'table-addons-for-elementor' ),
+					'keep-all' => __( 'Keep All', 'table-addons-for-elementor' ),
+				],
+				'selectors' => [
+					'{{WRAPPER}} table.tafe-table td' => 'word-break: {{VALUE}};',
+				],
 			]
 		);
 
