@@ -3,9 +3,9 @@
  * Plugin Name:	Table Addons for Elementor
  * Description: Table Widget for elementor page builder. Effortlessly create stunning and functional tables on Elementor.
  * Plugin URI:  https://fusionplugin.com/plugins/table-addons-for-elementor/
- * Version:     2.1.4
- * Elementor tested up to: 3.25.6
- * Elementor Pro tested up to: 3.25.6
+ * Version:     2.1.5
+ * Elementor tested up to: 3.33.1
+ * Elementor Pro tested up to: 3.32.3
  * Author:      FusionPlugin
  * Author URI:  https://fusionplugin.com/
  * License:		GPL-2.0+
@@ -23,7 +23,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Currently plugin version.
  */
-define( 'TABLE_ADDONS_FOR_ELEMENTOR_VERSION', '2.1.4' );
+define( 'TABLE_ADDONS_FOR_ELEMENTOR_VERSION', '2.1.5' );
 define( 'TABLE_ADDONS_FOR_ELEMENTOR__BASE', plugin_basename( __FILE__ ) );
 
 /**
@@ -64,3 +64,24 @@ function run_table_addons_for_elementor() {
 
 }
 run_table_addons_for_elementor();
+
+
+/**
+ * Initialize the plugin tracker
+ *
+ * @return void
+ */
+function appsero_init_tracker_table_addons_for_elementor() {
+
+    if ( ! class_exists( 'Appsero\Client' ) ) {
+      require_once __DIR__ . '/includes/appsero/src/Client.php';
+    }
+
+    $client = new Appsero\Client( '97381f4c-2239-43f7-b79a-3737f4be7950', 'Table Addons for Elementor', __FILE__ );
+
+    // Active insights
+    $client->insights()->init();
+
+}
+
+appsero_init_tracker_table_addons_for_elementor();

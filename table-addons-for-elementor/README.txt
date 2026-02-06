@@ -3,8 +3,8 @@ Contributors: fusionplugin
 Plugin Name: Table Addons For Elementor
 Tags: elementor table, table, table for elementor, table builder, table plugin
 Requires at least: 3.0.1
-Tested up to: 6.7
-Stable tag: 2.1.4
+Tested up to: 6.8.3
+Stable tag: 2.1.5
 Requires PHP: 7.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -66,6 +66,17 @@ Step 6: Edit page/post with Elementor
 Step 7: Search for Table widget, Drag and drop the Table widget
 Step 8: Click on the folder icon and Choose the imported template
 
+
+## Privacy Policy 
+Table Addons for Elementor uses [Appsero](https://appsero.com) SDK to collect some telemetry data upon user's confirmation. This helps us to troubleshoot problems faster & make product improvements.
+
+Appsero SDK **does not gather any data by default.** The SDK only starts gathering basic telemetry data **when a user allows it via the admin notice**. We collect the data to ensure a great user experience for all our users. 
+
+Integrating Appsero SDK **DOES NOT IMMEDIATELY** start gathering data, **without confirmation from users in any case.**
+
+Learn more about how [Appsero collects and uses this data](https://appsero.com/privacy-policy/).
+
+
 == Installation ==
 
 1. Upload `table-addons-for-elementor` folder to the `/wp-content/plugins/` directory
@@ -100,6 +111,10 @@ Our Pro plugin supports a variety of field types, including icons, images, butto
 3. Sample table
 
 == Changelog ==
+
+= 2.1.5 =
+* Other: Compatible with WordPress 6.8.3
+* Other: Compatible with WooCommerce 10.3.5
 
 = 2.1.4 =
 * New: Word Break style option added
